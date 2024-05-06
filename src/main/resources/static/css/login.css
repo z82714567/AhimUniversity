@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    width: 40%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .login-form input[type="number"],
+  .login-form input[type="password"] {
+    width: calc(100% - 35px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5fcf80;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .login-form .checkbox-id {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .login-form .checkbox-id label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  .login-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .login-info li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .login-info li a {
+    text-decoration: none;
+    color: #5fcf80;
+  }
+
+  .login-info li a:hover {
+    text-decoration: underline;
+  }
+
+  .test-credentials {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .test-credentials h4 {
+    margin-bottom: 10px;
+  }}

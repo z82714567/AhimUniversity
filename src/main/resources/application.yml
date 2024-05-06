@@ -1,0 +1,33 @@
+server:
+  port: 80
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+
+spring:
+  mvc:
+    #throw-exception-if-no-handler-found: true
+    dispatch-options-request: false
+    view:
+      prefix: /WEB-INF/view/ # jsp 파일 경로
+      suffix: .jsp # 확장자
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  datasource: # 일단 영재 ec2
+    url: jdbc:mysql://13.211.47.78/ahim?serverTimeZone=Asia/Seoul
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Sa1953vb!
+  devtools:
+    restart:
+      enabled: true
+
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/**.xml
+  configuration:
+    map-underscore-to-camel-case: true # DB의 underscore(snake case) 방식을 Java의 camel case 방식과 매핑
