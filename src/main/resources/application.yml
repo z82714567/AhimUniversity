@@ -17,10 +17,10 @@ spring:
       max-file-size: 20MB
       max-request-size: 20MB
   datasource: # 일단 영재 ec2
-    url: jdbc:mysql://13.211.47.78/ahim?serverTimeZone=Asia/Seoul
+    url: jdbc:mysql://13.124.61.207/ahim?serverTimeZone=Asia/Seoul
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Sa1953vb!
+    password: zp426486!!ZP
   devtools:
     restart:
       enabled: true
